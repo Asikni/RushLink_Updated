@@ -1,5 +1,5 @@
 interface ButtonProps {
-  children: any;
+  children?: any;
   className?: string;
 }
 

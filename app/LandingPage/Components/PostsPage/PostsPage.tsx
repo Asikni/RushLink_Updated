@@ -1,15 +1,17 @@
 export const PostsPage = () => {
   return (
     <div>
-      <div className="postsHeading">Featured Posts</div>
+      <h1 className="posts-page-heading">
+        <span>Trending</span> Posts
+      </h1>
 
-      <div className="postSubHeading">
-        <div className="postSubHeading Subheadings">
-          <p>Connect</p>
+      <div className="sub-heading-container">
+        <div className="posts-page-subheading">
+          <p>Rate</p>
           <p className="dot"></p>
-          <p>Bond</p>
+          <p>Review</p>
           <p className="dot"></p>
-          <p>Thrive!!</p>
+          <p>Rank</p>
         </div>
       </div>
       <div className="cardsContainer">

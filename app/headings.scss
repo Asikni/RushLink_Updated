@@ -10,6 +10,20 @@
   font-size: 20px;
   padding-bottom: 50px;
 }
+.posts-page-heading {
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+}
+.sub-heading-container {
+  @include flex-center;
+}
+.posts-page-subheading {
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer-headings {
   width: 35%;
 }

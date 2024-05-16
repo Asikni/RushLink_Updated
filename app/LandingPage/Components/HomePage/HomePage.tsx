@@ -18,7 +18,7 @@ export const HomePage = () => {
             placeHolder="Search For Organizations"
             className="search-bar-homepage-input"
           />
-          <div className="search-bar-homepage-icon"></div>
+          <Button className="search-bar-homepage-icon"></Button>
         </div>
         <Button className="search-bar-homepage-download-btn">
           Download App <div className="download-btn-logo"></div>
