@@ -1,0 +1,15 @@
+@import "globals";
+.navbar-container {
+}
+.nae {
+  background: linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar-logo {
+  background-image: url("./public/assets/svgimages/rushlinkLogo.svg");
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

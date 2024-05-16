@@ -1,0 +1,37 @@
+// styles/_variables.scss
+
+$primary-color: #007bff;
+$secondary-color: #ff6c00;
+
+// styles/_mixins.scss
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: $primary-color;
+  color: white;
+  padding: 20px;
+  @include flex-center;
+}
+
+.button {
+  background-color: $secondary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
