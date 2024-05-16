@@ -1,1 +1,102 @@
-$primary-color: linear-gradient(red, yellow);
+$primary-color: rgba(255, 87, 87, 1);
+$text-color: rgba(255, 255, 255, 1);
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  //   outline: 1px solid yellow;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  color: $text-color;
+  background-color: rgba(15, 15, 15, 1);
+}
+
+.homepage-container {
+  @include flex-col-center;
+  padding-top: 100px;
+}
+
+.search-bar-homepage {
+  display: flex;
+  padding-bottom: 30px;
+
+  &-input {
+    width: 470px;
+    height: 90px;
+  }
+  &-icon {
+    width: 96px;
+    height: 90px;
+    background-color: $primary-color;
+  }
+  &-download-btn {
+    width: 238px;
+    height: 67px;
+    @include flex-center();
+    gap: 25px;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(33, 7, 7, 1);
+  }
+}
+
+.log-in-component {
+  padding: 100px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.log-in-bg-image {
+  background-image: url("/assets/pngimages/logInBgImage.png");
+  width: 1067px;
+  height: 409px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  overflow: visible;
+}
+// .log-in-bg-image2 {
+//   background-image: url("/assets/pngimages/logInBgImage2.png");
+//   width: 1000px;
+//   height: 415px;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+
+//   position: absolute;
+//   top: 5%;
+
+// }
+
+.log-in-image-content {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 100px;
+}
+.logInButton {
+  font-size: 25px;
+  font-weight: 500;
+  background-color: transparent;
+  width: 222px;
+  height: 75px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 19px;
+  align-self: center;
+}

@@ -8,13 +8,13 @@ export const Navbar = () => {
       <div className="navbar-logo"></div>
       <div className="navbar-headings">
         {NavbarHeadings?.map((heading, index) => (
-          <div key={index} className="nae">
+          <div key={index} className="navbar-heading">
             {heading.heading}
           </div>
         ))}
       </div>
       <div>
-        <Button classname="navbar-contactUs-btn"> Contact Us </Button>
+        <Button className="navbar-contactUs-btn"> Contact Us </Button>
       </div>
     </div>
   );

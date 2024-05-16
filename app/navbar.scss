@@ -1,15 +1,36 @@
 @import "globals";
 .navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(15, 15, 15, 1);
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.01)
+  );
+  height: 128px;
+  padding: 55px 55px 0px 55px;
 }
-.nae {
-  background: linear-gradient(#eee, #333);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+// .nae {
+//   background: linear-gradient(#eee, #333);
+//   background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+.navbar-headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 607px;
+  .navbar-heading {
+  }
 }
+
 .navbar-logo {
-  background-image: url("./public/assets/svgimages/rushlinkLogo.svg");
-  width: 100px;
-  height: 100px;
+  background-image: url("../public/assets/svgimages/rushlinkLogo.svg");
+  width: 211px;
+  height: 36px;
   background-repeat: no-repeat;
   background-size: contain;
 }

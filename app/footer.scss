@@ -1,0 +1,91 @@
+@import "globals";
+$border: linear-gradient(rgba(238, 79, 96, 1), rgba(241, 92, 9, 1));
+
+@mixin flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 55px 100px 55px 55px;
+
+  &-logo {
+    background-image: url("/assets/svgimages/rushlinkLogo.svg");
+    width: 211px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 76px;
+  }
+  &-details {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 380px;
+    padding-top: 25px;
+  }
+}
+.footer-resources {
+  font-weight: 500;
+  font-size: 20px;
+  color: $primary-color;
+  padding: 10px 0px 60px 0px;
+
+  &-site-links {
+    @include flex-column-between;
+    height: 65%;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &-contact {
+    @include flex-column-between;
+    height: 45%;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &-resources {
+    @include flex-column-between;
+    height: 65%;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.social-media-logos {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.download-btn {
+  width: 238px;
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: $primary-color;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgba(33, 7, 7, 1);
+  //   background: linear-gradient(rgba(238, 79, 96, 1), rgba(241, 92, 9, 1));
+  border: 2px solid;
+}
+.download-btn-logo {
+  background-image: url("/assets/svgimages/downloadBtnLogo.svg");
+  width: 15px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 55px 0px;
+}
