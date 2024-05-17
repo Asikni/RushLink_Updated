@@ -1,4 +1,5 @@
 import { CardsData } from "@/app/utils/constants";
+import Image from "next/image";
 
 export const PostsCard = () => {
   return (
@@ -6,49 +7,62 @@ export const PostsCard = () => {
       <div className="cards">
         {CardsData.map((card, index) => (
           <div className="individual-card" key={index}>
-            <div className="university-logo">{card.universityLogo}</div>
-            <div className="university-name">{card.universityName}</div>
-            <div className="post-to">{card.postTo}</div>
-            <div className="post-by">{card.postBy}</div>
-            <div className="time-ago">{card.timeAgo}</div>
-            <div className="card-top-heading">{card.cardHeading}</div>
-            <div className="card-comment">{card.cardComments}</div>
+            <div className="card-top-details">
+              <div className="university-logo">
+                <Image
+                  src={card.universityLogo}
+                  width={52}
+                  height={52}
+                  alt="logo of the university"
+                />
+              </div>
+              <div>
+                <div className="card-top-details-post-meta">
+                  <p className="post-meta-post-by">{card.postBy}</p>
+                  <p className="university-post-container-university-name">
+                    {card.universityName}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h2 className="card-top-heading">{card.cardHeading}</h2>
+            <h3 className="card-comment">{card.cardComments}</h3>
             <div className="card-footer">
               <div className="by-date">
-                <div>{card.cardBy}</div>
-                <div>{card.DateTime}</div>
+                <p>{card.cardBy}</p>
+                <p>{card.dateTime}</p>
               </div>
-              <div className="commentsData">
+              <div className="comments-data">
                 <div>
                   <Image
                     className="viewsLogo"
-                    src={card.ViewsLogo}
-                    width={28.12}
-                    height={20.63}
+                    src={card.viewsLogo}
+                    width={28}
+                    height={21}
                     alt="views logo"
                   />
                 </div>
-                <div className="views">{card.Views}</div>
+                <p className="views">{card.views}</p>
                 <div>
                   <Image
-                    className="likesLogo"
-                    src={card.LikesLogo}
-                    width={28.12}
-                    height={20.63}
+                    className="likes-logo"
+                    src={card.likesLogo}
+                    width={28}
+                    height={21}
                     alt="likes logo"
                   />
                 </div>
-                <div className="likes">{card.Likes}</div>
+                <p className="likes">{card.likes}</p>
                 <div>
                   <Image
-                    className="dislikesLogo"
-                    src={card.DislikesLogo}
-                    width={28.12}
-                    height={20.63}
+                    className="dislikes-logo"
+                    src={card.dislikesLogo}
+                    width={28}
+                    height={21}
                     alt="dislikes logo"
                   />
                 </div>
-                <div className="dislikes">{card.Dislikes}</div>
+                <p className="dislikes">{card.dislikes}</p>
               </div>
             </div>
           </div>

@@ -1,3 +1,5 @@
+import { PostsCard } from "./Compoents/PostsCard";
+
 export const PostsPage = () => {
   return (
     <div>
@@ -14,10 +16,10 @@ export const PostsPage = () => {
           <p>Rank</p>
         </div>
       </div>
-      <div className="cardsContainer">
+      <div className="cards-container">
         <div className="bgDotsImageMobile2"></div>
         <div className="bgEllipseImage"></div>
-        {/* <Cards /> */}
+        <PostsCard />
       </div>
     </div>
   );

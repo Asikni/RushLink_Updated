@@ -3,6 +3,10 @@ $text-color: rgba(255, 255, 255, 1);
 $blue-border: 1px solid blue;
 $red-border: 1px solid red;
 $green-border: 1px solid green;
+@mixin font-weight-size-700-60 {
+  font-weight: 700;
+  font-size: 60px;
+}
 
 * {
   padding: 0px;
@@ -55,6 +59,106 @@ body {
     font-weight: 500;
     background-color: rgba(33, 7, 7, 1);
   }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 255px;
+}
+.cards-inner-container {
+  width: 1087px;
+}
+.cards {
+  display: flex;
+  padding: 35px 5px 0px 15px;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.individual-card {
+  width: 527px;
+  height: 429px;
+  border-radius: 9.9px;
+  border: 1px solid rgba(193, 193, 193, 1);
+
+  z-index: 0;
+}
+.bgEllipseImage {
+  background-image: url("/assets/SVG/bgEllipseCardsSection.svg");
+  width: 437px;
+  height: 437px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 240px;
+  left: 0px;
+  z-index: 10;
+}
+.card-top-details {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+
+  &-university-post-container {
+    display: flex;
+
+    &-post-to {
+    }
+  }
+  &-post-meta {
+    display: flex;
+  }
+}
+
+.card-top-heading {
+  border-bottom: 1px solid var(--Grey);
+  padding: 35px 0px 35px 25px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.card-comment {
+  padding: 35px 25px 35px 25px;
+  font-weight: 400;
+  font-size: 18px;
+  height: 200px;
+}
+
+.byDate {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 25px 35px 25px;
+  font-size: 18px;
+}
+.commentsData {
+  padding-left: 25px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 18.9px;
+}
+
+.views {
+  color: var(--Primary);
+}
+
+.likes {
+  color: var(--Primary);
+}
+.dislikes {
+  color: var(--Primary);
+}
+
+.university-page-logos {
+  padding: 0px 105px 0px 55px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 25px;
 }
 
 .log-in-component {

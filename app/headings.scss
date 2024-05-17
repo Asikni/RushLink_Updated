@@ -1,7 +1,6 @@
 @import "globals";
 .hero-heading {
-  font-weight: 700;
-  font-size: 60px;
+  @include font-weight-size-700-60;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -11,8 +10,7 @@
   padding-bottom: 50px;
 }
 .posts-page-heading {
-  font-weight: 700;
-  font-size: 60px;
+  @include font-weight-size-700-60;
   text-align: center;
 }
 .sub-heading-container {
@@ -23,7 +21,22 @@
   display: flex;
   justify-content: space-around;
 }
-
+.university-page-heading {
+  @include font-weight-size-700-60;
+  color: $primary-color;
+  padding: 0px 0px 0px 55px;
+}
+.news-page-heading {
+  @include font-weight-size-700-60;
+  text-align: center;
+  color: $primary-color;
+  padding: 55px 0px 55px 0px;
+}
+.news-page-subheading {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
 .footer-headings {
   width: 35%;
 }

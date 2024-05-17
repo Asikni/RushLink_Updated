@@ -33,11 +33,11 @@ export const CardsData = [
       "A really great brotherhood! Super close and fun to be around. They're really chill, and it's sad to see them die over the years. They're very academically inclined and respectful gentlemen overall.",
     cardBy: "AashishTKher",
     dateTime: "Apr 27, 2024 6:48:20 PM",
-    viewsLogo: "/assets/SVG/Views.svg",
+    viewsLogo: "/assets/svgimages/viewstatsLogo.svg",
     views: 25,
-    likesLogo: "/assets/SVG/Likes.svg",
+    likesLogo: "/assets/svgimages/likesLogo.svg",
     likes: 0,
-    dislikesLogo: "/assets/SVG/Dislikes.svg",
+    dislikesLogo: "/assets/svgimages/dislikesLogo.svg",
     dislikes: 5,
   },
   {
@@ -50,11 +50,11 @@ export const CardsData = [
     cardComments: "We are at the mercy of hands that are not our own.",
     cardBy: "AaBad",
     dateTime: "Apr 28, 2023 8:48:20 PM",
-    viewsLogo: "/assets/SVG/Views.svg",
+    viewsLogo: "/assets/svgimages/viewstatsLogo.svg",
     views: 105,
-    likesLogo: "/assets/SVG/Likes.svg",
+    likesLogo: "/assets/svgimages/likesLogo.svg",
     likes: 12,
-    dislikesLogo: "/assets/SVG/Dislikes.svg",
+    dislikesLogo: "/assets/svgimages/dislikesLogo.svg",
     dislikes: 5,
   },
   {
@@ -67,15 +67,41 @@ export const CardsData = [
     cardComments: "We are at the mercy of hands that are not our own.",
     cardBy: "AaBad",
     dateTime: "Apr 28, 2023 8:48:20 PM",
-    viewsLogo: "/assets/SVG/Views.svg",
+    viewsLogo: "/assets/svgimages/viewstatsLogo.svg",
     views: 105,
-    likesLogo: "/assets/SVG/Likes.svg",
+    likesLogo: "/assets/svgimages/likesLogo.svg",
     likes: 12,
-    dislikesLogo: "/assets/SVG/Dislikes.svg",
+    dislikesLogo: "/assets/svgimages/dislikesLogo.svg",
     dislikes: 5,
   },
 ];
 
+export const UniversitiesOrganizationsLogos = [
+  {
+    universityorganizationlogo: "/assets/svgimages/organizationLogo1.svg",
+  },
+  {
+    universityorganizationlogo: "/assets/svgimages/organizationLogo2.svg",
+  },
+  {
+    universityorganizationlogo: "/assets/svgimages/organizationLogo3.svg",
+  },
+  {
+    universityorganizationlogo: "/assets/svgimages/organizationLogo4.svg",
+  },
+  {
+    universityorganizationlogo: "/assets/svgimages/organizationLogo5.svg",
+  },
+  {
+    universityorganizationlogo: "/assets/svgimages/organizationLogo6.svg",
+  },
+  {
+    universityorganizationlogo: "/assets/svgimages/organizationLogo7.svg",
+  },
+  {
+    universityorganizationlogo: "/assets/svgimages/organizationLogo8.svg",
+  },
+];
 export const SocialMediaLogos = [
   {
     logo: "/assets/svgimages/facebookLogo.svg",
