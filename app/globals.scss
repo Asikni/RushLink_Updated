@@ -160,7 +160,23 @@ body {
   column-gap: 20px;
   row-gap: 25px;
 }
+.static-news-image-container {
+  width: 100%;
+}
+.static-news-image {
+  @include flex-center();
+}
+.slider-news-images {
+  display: flex;
+  font-weight: 500;
+  font-size: 25x;
+}
 
+.fs-logos-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .log-in-component {
   padding: 100px 0px 0px 0px;
   display: flex;

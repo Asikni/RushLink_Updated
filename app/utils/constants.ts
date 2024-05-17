@@ -102,6 +102,74 @@ export const UniversitiesOrganizationsLogos = [
     universityorganizationlogo: "/assets/svgimages/organizationLogo8.svg",
   },
 ];
+
+export const StaticNewsPageImage = [
+  {
+    image: "/assets/pngimages/staticNewsImage.png",
+    name: "Lilly",
+    date: "Oct 4, 2023",
+    newsArticle: "2024 - The Future of Greek Life Excites Me",
+  },
+];
+
+export const NewsImages = [
+  {
+    image: "/assets/pngimages/newsImage1.png",
+    name: "Ken",
+    date: "March 9, 2023",
+    newsArticle: "Fraternity Tips - How to Choose the Right Fraternity",
+  },
+  {
+    image: "/assets/pngimages/newsImage2.png",
+    name: "Georgia",
+    date: "Oct 4, 2021",
+    newsArticle: "Impact of Greek Life on Leadership Development",
+  },
+  {
+    image: "/assets/pngimages/newsImage2.png",
+    name: "Georgia",
+    date: "Oct 4, 2021",
+    newsArticle: "Impact of Greek Life on Leadership Development",
+  },
+];
+
+export const TopFSLogos = [
+  {
+    name: "Tau Kappa Epsilon",
+    logo: "/assets/svgimages/fsLogo1.svg",
+  },
+  {
+    name: "Kappa Sigma",
+    logo: "/assets/svgimages/fsLogo2.svg",
+  },
+  {
+    name: "Sigma Alpha Epsilon",
+    logo: "/assets/svgimages/fsLogo3.svg",
+  },
+
+  {
+    name: "Sigma Chi",
+    logo: "/assets/svgimages/fsLogo4.svg",
+  },
+  {
+    name: "Sigma Phi Epsilon",
+    logo: "/assets/svgimages/fsLogo5.svg",
+  },
+  {
+    name: "Pi Kappa Alpha",
+    logo: "/assets/svgimages/fsLogo6.svg",
+  },
+  {
+    name: "Lambda Chi Alpha",
+    logo: "/assets/svgimages/fsLogo7.svg",
+  },
+
+  {
+    name: "Pi Kappa Phi",
+    logo: "/assets/svgimages/fsLogo8.svg",
+  },
+];
+
 export const SocialMediaLogos = [
   {
     logo: "/assets/svgimages/facebookLogo.svg",

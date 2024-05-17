@@ -26,16 +26,32 @@
   color: $primary-color;
   padding: 0px 0px 0px 55px;
 }
-.news-page-heading {
-  @include font-weight-size-700-60;
-  text-align: center;
-  color: $primary-color;
-  padding: 55px 0px 55px 0px;
+.news-page {
+  &-heading {
+    @include font-weight-size-700-60;
+    text-align: center;
+    color: $primary-color;
+    padding: 55px 0px 55px 0px;
+  }
+  &-subheading {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0px 0px 55px 0px;
+    text-align: center;
+  }
 }
-.news-page-subheading {
+
+.rankings-heading {
+  @include font-weight-size-700-60;
+  color: $primary-color;
+}
+.rankings-sub-heading-one {
   font-weight: 500;
   font-size: 20px;
-  text-align: center;
+}
+.rankings-sub-heading-two {
+  font-weight: 500;
+  font-size: 20px;
 }
 .footer-headings {
   width: 35%;
