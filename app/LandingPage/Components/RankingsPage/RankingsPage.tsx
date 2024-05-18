@@ -11,7 +11,7 @@ export const RankingsPage = () => {
         Top 5 Largest Fraternities & Sororities (Excluding Cultural & Honors
         Fraternities)
       </h2>
-      <div className="fs-logos-container">
+      <div className="rankings-fs-logos-container">
         {TopFSLogos.map((fsLogo, index) => (
           <div key={index}>
             <Image
