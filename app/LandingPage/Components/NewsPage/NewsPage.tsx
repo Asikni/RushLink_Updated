@@ -8,34 +8,54 @@ export const NewsPage = () => {
       <h2 className="news-page-subheading">
         Discover Insights about Fraternities and Sororrities Around The Globe
       </h2>
-      <div className="static-news-image-container">
-        <div className="static-news-image">
+      <div className="news-page-image-content-container">
+        <div className="news-page-static-image-container">
           {StaticNewsPageImage.map((staticImage, index) => (
-            <div key={index}>
-              <Image
-                src={staticImage.image}
-                width={1081}
-                height={405}
-                alt="news image"
-              />
-              <h2>{staticImage.name}</h2>
-              <h2>{staticImage.date}</h2>
-              <h2>{staticImage.newsArticle}</h2>
+            <div key={index} className="static-news-content-container">
+              <div
+                style={{ backgroundImage: `url(${staticImage.image})` }}
+                className="news-page-static-image-container-image"
+              >
+                {" "}
+              </div>
+              <div
+                className="news-page-static-image-container-name-date"
+                style={{ display: "flex", gap: "10px" }}
+              >
+                <p>{staticImage.name}</p>
+                <p>{staticImage.date}</p>
+              </div>
+              <p className="news-page-static-image-container-newsarticle">
+                {staticImage.newsArticle}
+              </p>
             </div>
           ))}
         </div>
-        <div className="slider-news-images">
+
+        <div className="news-page-slider-news-images">
           {NewsImages.map((newsImage, index) => (
-            <div key={index}>
-              <Image
+            <div
+              key={index}
+              className="news-page-slider-news-images-image"
+              style={{ backgroundImage: `url(${newsImage.image})` }}
+            >
+              {/* <Image
                 src={newsImage.image}
                 width={524}
                 height={441}
                 alt="news image"
-              />
-              <h2>{newsImage.name}</h2>
-              <h2>{newsImage.date}</h2>
-              <h2>{newsImage.newsArticle}</h2>
+              /> */}
+              <div
+                className="news-page-slider-news-images-name-date"
+                style={{ display: "flex", gap: "10px" }}
+              >
+                <p>{newsImage.name}</p>
+                <p>{newsImage.date}</p>
+              </div>
+              <h2 className="news-page-slider-news-images-newsarticle">
+                {" "}
+                {newsImage.newsArticle}
+              </h2>
             </div>
           ))}
         </div>

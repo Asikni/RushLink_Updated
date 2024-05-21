@@ -5,16 +5,16 @@ import "@/app/navbar.scss";
 export const Navbar = () => {
   return (
     <div className="navbar-container">
-      <div className="navbar-logo"></div>
-      <div className="navbar-headings">
+      <div className="navbar-container-logo"></div>
+      <div className="navbar-container-headings">
         {NavbarHeadings?.map((heading, index) => (
-          <div key={index} className="navbar-heading">
+          <div key={index} className="navbar-container-heading">
             {heading.heading}
           </div>
         ))}
       </div>
       <div>
-        <Button className="navbar-contactUs-btn"> Contact Us </Button>
+        <Button className="navbar-container-contactUs-btn"> Contact Us </Button>
       </div>
     </div>
   );

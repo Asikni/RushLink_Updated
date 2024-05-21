@@ -1,22 +1,39 @@
 @import "globals";
-.hero-heading {
-  @include font-weight-size-700-60;
-  text-align: center;
-  padding-bottom: 30px;
+
+.homepage-container {
+  &-hero-heading {
+    @include font-weight-size-700-60;
+    text-align: center;
+    padding-bottom: 40px;
+
+    &-news {
+      @include text-gradient-color;
+    }
+
+    &-reviews {
+      @include text-gradient-color;
+    }
+  }
+  &-hero-sub-heading {
+    @include font-weight-size-500-20;
+    padding-bottom: 60px;
+  }
 }
-.hero-sub-heading {
-  font-weight: 500;
-  font-size: 20px;
-  padding-bottom: 50px;
-}
+
 .posts-page-heading {
   @include font-weight-size-700-60;
   text-align: center;
+  padding: 200px 0px 30px 0px;
+
+  &-trending {
+    @include text-gradient-color;
+  }
 }
-.sub-heading-container {
+.posts-page-sub-heading-container {
   @include flex-center;
+  padding-bottom: 50px;
 }
-.posts-page-subheading {
+.posts-page-sub-heading {
   width: 360px;
   display: flex;
   justify-content: space-around;
@@ -24,42 +41,45 @@
 .university-page-heading {
   @include font-weight-size-700-60;
   color: $primary-color;
-  padding: 0px 0px 0px 55px;
+  padding: 0px 0px 100px 55px;
 }
 .news-page {
   &-heading {
     @include font-weight-size-700-60;
     text-align: center;
-    color: $primary-color;
-    padding: 55px 0px 55px 0px;
+    @include text-gradient-color;
+    padding: 125px 0px 35px 0px;
   }
   &-subheading {
-    font-weight: 500;
-    font-size: 20px;
+    @include font-weight-size-500-20;
     padding: 0px 0px 55px 0px;
     text-align: center;
   }
 }
-.ranking {
+.rankings-page {
   &-heading {
     @include font-weight-size-700-60;
     color: $primary-color;
+    margin: 150px 0px 20px 55px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   &-sub-heading-one {
-    font-weight: 500;
-    font-size: 20px;
+    @include font-weight-size-500-20;
+    margin: 0px 0px 20px 55px;
   }
   &-sub-heading-two {
-    font-weight: 500;
-    font-size: 20px;
+    @include font-weight-size-500-20;
+    margin: 0px 0px 100px 55px;
   }
 }
 .footer-headings {
   width: 35%;
 }
 .footer-sub-heading {
-  font-weight: 500;
-  font-size: 20px;
+  @include font-weight-size-500-20;
 }
 .footer-sub-heading-social-media {
   font-weight: 500;

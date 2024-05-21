@@ -1,4 +1,14 @@
 @import "globals";
+
+@mixin navbar-contact-btn-border {
+  background: linear-gradient(rgba(15, 15, 15, 1), rgba(15, 15, 15, 1))
+      padding-box,
+    //This means that the linear gradient background will be applied only to the area within the padding box of the element. It won't extend into the border area.
+    linear-gradient(to right, rgba(238, 79, 96, 1), rgba(241, 92, 9, 1))
+      border-box;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
 .navbar-container {
   display: flex;
   flex-direction: row;
@@ -10,7 +20,50 @@
     rgba(255, 255, 255, 0.01)
   );
   height: 128px;
-  padding: 55px 55px 0px 55px;
+  padding: 45px 55px 0px 55px;
+
+  &-headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 607px;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 12px;
+  }
+
+  &-heading {
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid $text-color;
+    }
+  }
+
+  &-logo {
+    background-image: url("/assets/svgimages/rushlinkLogo.svg");
+    width: 211px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &-contactUs-btn {
+    width: 138px;
+    height: 43px;
+    @include navbar-contact-btn-border();
+    color: $text-color;
+    font-weight: 400;
+    font-size: 18px;
+    &:hover {
+      cursor: pointer;
+      font-size: 16px;
+      @include navbar-contact-btn-border();
+      border: 1px solid transparent;
+    }
+  }
 }
 
 // .nae {
@@ -18,19 +71,3 @@
 //   background-clip: text;
 //   -webkit-text-fill-color: transparent;
 // }
-.navbar-headings {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 607px;
-  .navbar-heading {
-  }
-}
-
-.navbar-logo {
-  background-image: url("../public/assets/svgimages/rushlinkLogo.svg");
-  width: 211px;
-  height: 36px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
