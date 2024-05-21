@@ -15,9 +15,12 @@ export const LogInPage = () => {
                 width: "100%",
                 display: "flex",
                 justifyContent: "center",
+                alignItems: "center",
+                margin: "10px 0px",
+                height: "100px",
               }}
             >
-              <Button className="log-in-btn">Login</Button>
+              <Button className="log-in-component-bg-image-btn">Login</Button>
             </div>
           </div>
         </div>

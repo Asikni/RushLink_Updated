@@ -21,65 +21,92 @@ $border: linear-gradient(rgba(238, 79, 96, 1), rgba(241, 92, 9, 1));
     background-size: contain;
     padding-bottom: 76px;
   }
-  &-details {
+  &-headings-left-container-social-media-logos {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-logo {
+      width: 3vw;
+      height: 3vw;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 70px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-headings-left-container-download-btn {
+    width: 238px;
+    height: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(33, 7, 7, 1);
+    //   background: linear-gradient(rgba(238, 79, 96, 1), rgba(241, 92, 9, 1));
+    @include btn-border;
+    &-logo {
+      background-image: url("/assets/svgimages/downloadBtnLogo.svg");
+      width: 15px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      cursor: pointer;
+      font-size: 22px;
+      border: 3px solid transparent;
+    }
+  }
+  &-headings-right-container {
     width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 380px;
-    padding-top: 25px;
-  }
-}
-.footer-resources {
-  font-weight: 500;
-  font-size: 20px;
-  color: $primary-color;
-  padding: 10px 0px 60px 0px;
+    margin-top: 25px;
 
-  &-site-links {
-    @include flex-column-between;
-    height: 65%;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  &-contact {
-    @include flex-column-between;
-    height: 45%;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  &-resources {
-    @include flex-column-between;
-    height: 65%;
-    font-size: 20px;
-    font-weight: 500;
-  }
-}
+    border-left: 1px solid rgba(193, 193, 193, 1);
+    &-resources {
+      font-weight: 500;
+      font-size: 20px;
+      color: $primary-color;
+      padding: 10px 0px 60px 0px;
 
-.social-media-logos {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.download-btn {
-  width: 238px;
-  height: 67px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  color: $primary-color;
-  font-size: 20px;
-  font-weight: 500;
-  background-color: rgba(33, 7, 7, 1);
-  //   background: linear-gradient(rgba(238, 79, 96, 1), rgba(241, 92, 9, 1));
-  border: 2px solid;
+      &-site-links {
+        @include flex-column-between;
+        height: 65%;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      &-contact {
+        @include flex-column-between;
+        height: 45%;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      &-resources {
+        @include flex-column-between;
+        height: 65%;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 .copyright {
   display: flex;
   justify-content: center;
   padding: 55px 0px;
+  font-weight: 400;
+  font-size: 20px;
 }
