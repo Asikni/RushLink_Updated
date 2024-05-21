@@ -1,5 +1,5 @@
 import { TopFSLogos } from "@/app/utils/constants";
-import Image from "next/image";
+import { Button } from "@/app/Components/Button";
 export const RankingsPage = () => {
   return (
     <div className="rankings-page">
@@ -13,16 +13,28 @@ export const RankingsPage = () => {
       </h2>
       <div className="rankings-page-rankings-fs-logos-container">
         {TopFSLogos.map((fsLogo, index) => (
-          <div key={index}>
-            <Image
-              src={fsLogo.logo}
-              width={233}
-              height={217}
-              alt="fraternities and sororities logo"
-            />
-            <h2>{fsLogo.name}</h2>
+          <div
+            key={index}
+            className="rankings-page-rankings-fs-logos-container-logos-name"
+          >
+            <div
+              className="rankings-page-rankings-fs-logos-container-logos"
+              style={{ backgroundImage: `url(${fsLogo.logo})` }}
+            ></div>
+            <h2 className="rankings-page-rankings-fs-logos-container-names">
+              {" "}
+              {fsLogo.name}
+            </h2>
           </div>
         ))}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Button className="rankings-page-btn">View All</Button>
       </div>
     </div>
   );

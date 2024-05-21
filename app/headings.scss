@@ -60,19 +60,30 @@
   &-heading {
     @include font-weight-size-700-60;
     color: $primary-color;
-    margin: 150px 0px 20px 55px;
-
-    &:hover {
-      cursor: pointer;
-    }
+    padding: 150px 0px 20px 97px;
   }
   &-sub-heading-one {
     @include font-weight-size-500-20;
-    margin: 0px 0px 20px 55px;
+    padding: 0px 0px 20px 97px;
   }
   &-sub-heading-two {
     @include font-weight-size-500-20;
-    margin: 0px 0px 100px 55px;
+    padding: 0px 0px 100px 97px;
+  }
+}
+
+.log-in {
+  &-heading {
+    font-weight: 700;
+    font-size: 54px;
+    padding-bottom: 10px;
+  }
+
+  &-sub-heading {
+    font-weight: 500;
+    font-size: 23px;
+    padding-bottom: 40px;
+    text-align: center;
   }
 }
 .footer-headings {
@@ -85,17 +96,4 @@
   font-weight: 500;
   font-size: 20px;
   padding: 80px 0px 46px 0px;
-}
-
-.log-in-heading {
-  font-weight: 700;
-  font-size: 54px;
-  padding-bottom: 10px;
-}
-
-.log-in-sub-heading {
-  font-weight: 500;
-  font-size: 23px;
-  padding-bottom: 40px;
-  text-align: center;
 }

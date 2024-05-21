@@ -291,25 +291,80 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  &-rankings-fs-logos-container {
+    padding: 0px 97px 0px 97px;
+    &-logos-name {
+      position: relative;
+    }
+    &-logos {
+      width: 19vw;
+      max-width: 21vw;
+      height: 18vw;
+      max-height: 20vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 1px solid $primary-color;
+      border-radius: 22px;
+      transition: transform 0.2s; /* Animation */
+
+      &:hover {
+        border: 3px solid $primary-color;
+        cursor: pointer;
+        transform: scale(0.95);
+      }
+    }
+    &-names {
+      @include font-weight-size-500-20;
+      text-align: center;
+      width: 140px;
+      position: absolute;
+      top: 63%;
+      left: 23%;
+    }
+  }
+  &-btn {
+    width: 238px;
+    height: 67px;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 500;
+    @include btn-border();
+    margin: 40px 0px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
-.log-in-component {
-  padding: 100px 0px 0px 0px;
-  display: flex;
-  flex-direction: column;
+.log-in {
+  &-component {
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+
+    &-bg-image {
+      background-image: url("/assets/pngimages/logInBgImage.png");
+      width: 80vw;
+      height: 31vw;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      position: relative;
+      overflow: visible;
+      border: $red-border;
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 100px;
+      }
+    }
+  }
 }
 
-.log-in-bg-image {
-  background-image: url("/assets/pngimages/logInBgImage.png");
-  width: 1067px;
-  height: 409px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  position: relative;
-  overflow: visible;
-}
 // .log-in-bg-image2 {
 //   background-image: url("/assets/pngimages/logInBgImage2.png");
 //   width: 1000px;
@@ -322,12 +377,6 @@ body {
 
 // }
 
-.log-in-image-content {
-  display: flex;
-  flex-direction: column;
-
-  padding-top: 100px;
-}
 .logInButton {
   font-size: 25px;
   font-weight: 500;
