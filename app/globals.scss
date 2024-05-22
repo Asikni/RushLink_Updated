@@ -123,17 +123,17 @@ body {
   padding-bottom: 255px;
 }
 .cards-inner-container {
-  width: 1087px;
+  width: 80vw;
+  margin-top: 35px;
+
   &-all-cards {
     display: flex;
-    padding: 35px 5px 0px 15px;
-    justify-content: space-evenly;
-    gap: 25px;
+    justify-content: space-between;
   }
 }
 
 .individual-card {
-  width: 527px;
+  width: 39vw;
   height: 429px;
   border-radius: 9.9px;
   border: 1px solid rgba(193, 193, 193, 1);
@@ -141,32 +141,72 @@ body {
   &-top-details {
     display: flex;
     font-size: 18px;
+    padding: 20px 0px 10px 20px;
     font-weight: 400;
-    border: $blue-border;
+
+    &-university-logo {
+      width: 62px;
+      height: 62px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 10px;
+    }
 
     &-university-post-container {
       display: flex;
-
-      &-post-to {
-      }
     }
     &-post-meta {
       display: flex;
+      gap: 10px;
+      color: $primary-color;
     }
     &-tags {
       display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $primary-color;
+
+      p {
+        border: 1px solid $primary-color;
+        border-radius: 8px;
+        padding: 2px 8px 2px 8px;
+        background-color: rgba(255, 87, 87, 0.07);
+      }
     }
   }
-  .bgEllipseImage {
-    background-image: url("/assets/SVG/bgEllipseCardsSection.svg");
-    width: 437px;
-    height: 437px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 240px;
-    left: 0px;
-    z-index: 10;
+
+  &-comment {
+    padding: 10px 25px 35px 25px;
+    height: 248px;
+    font-weight: 400;
+    font-size: 18px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* number of lines to show */
+
+    -webkit-box-orient: vertical;
+  }
+  &-footer-section {
+    display: flex;
+    justify-content: space-between;
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 18.9px;
+
+    padding: 20px 25px 0px 25px;
+
+    &-left-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-right-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
   }
 }
 
@@ -177,79 +217,53 @@ body {
 //   font-size: 20px;
 // }
 
-.card-comment {
-  padding: 35px 25px 35px 25px;
-  font-weight: 400;
-  font-size: 18px;
-  height: 200px;
-}
+// .bgEllipseImage {
+//   background-image: url("/assets/SVG/bgEllipseCardsSection.svg");
+//   width: 437px;
+//   height: 437px;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   top: 240px;
+//   left: 0px;
+//   z-index: 10;
+// }
 
-.byDate {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 25px 35px 25px;
-  font-size: 18px;
-}
-.comments-data {
-  padding-left: 25px;
-
-  display: flex;
-  justify-content: space-around;
-  font-weight: 400;
-  font-size: 18.9px;
-
-  &-left-container {
-    display: flex;
-  }
-  &-right-container {
-    display: flex;
-  }
-}
 .comments-logo {
-  width: 28px;
+  width: 23px;
   height: 21px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .views-logo {
-  width: 28px;
+  width: 22px;
   height: 21px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .shared-posts-logo {
-  width: 28px;
+  width: 25px;
   height: 21px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .saved-posts-logo {
-  width: 28px;
+  width: 17px;
   height: 21px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .likes-logo {
-  width: 28px;
+  width: 20px;
   height: 21px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .dislikes-logo {
-  width: 28px;
+  width: 20px;
   height: 21px;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.views {
-  color: var(--Primary);
-}
-
-.likes {
-  color: var(--Primary);
-}
-.dislikes {
-  color: var(--Primary);
 }
 
 .university-page-logos {
